@@ -5,7 +5,7 @@ mongoose.Promise = require('bluebird');
 import mongoose, {Schema} from 'mongoose';
 import {registerEvents} from './user.events';
 
-const authTypes = ['github', 'twitter', 'facebook', 'google'];
+const authTypes = ['github', 'twitter', 'facebook', 'google', 'instagram'];
 
 var UserSchema = new Schema({
   name: String,
@@ -37,7 +37,8 @@ var UserSchema = new Schema({
   provider: String,
   salt: String,
   facebook: {},
-  github: {}
+  github: {},
+  instagram: {}
 });
 
 /**

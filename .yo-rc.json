@@ -27,7 +27,6 @@
       "mongooseModels": true,
       "mongoose": true,
       "oauth": true,
-      "facebookAuth": true,
       "mocha": true,
       "jasmine": false,
       "should": false,
