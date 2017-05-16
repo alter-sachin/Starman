@@ -41,8 +41,8 @@ describe('Login View', function() {
   });
 
   it('should include oauth buttons with correct classes applied', function() {
-    expect(page.form.oauthButtons.facebook.getText()).to.eventually.equal('Connect with Facebook');
-    expect(page.form.oauthButtons.facebook.getAttribute('class')).to.eventually.contain('btn-block');
+    expect(page.form.oauthButtons.instagram.getText()).to.eventually.equal('Connect with instagram');
+    expect(page.form.oauthButtons.instagram.getAttribute('class')).to.eventually.contain('btn-block');
   });
 
   describe('with local auth', function() {
