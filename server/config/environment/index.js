@@ -54,7 +54,7 @@ var all = {
   instagram: {
     clientID: process.env.INSTAGRAM_ID || 'id',
     clientSecret: process.env.INSTAGRAM_SECRET || 'secret',
-    callbackURL: `https://metaheuristics.xyz/insta`
+    callbackURL: `https://metaheuristics.xyz/insta/auth/instagram/callback`
   }
 };
 
