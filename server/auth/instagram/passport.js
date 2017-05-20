@@ -17,10 +17,9 @@ export function setup(User, config) {
         if(user) {
           return done(null, user);
         }
-
+        console.log(profile);
         user = new User({
-          name: profile.displayName,
-          email: profile.emails[0].value,
+          name: profile.full_name,
           role: 'user',
           provider: 'instagram',
           instagram: profile._json
